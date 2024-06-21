@@ -1,0 +1,122 @@
+.conf .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 20px 0;
+  justify-content: center;
+}
+
+.conf .cards .card {
+  border: solid 1px var(--main-color);
+  box-shadow: 5px 5px 3px #00000022;
+  background-color: var(--main-color);
+  width: 200px;
+  height: 260px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.conf .cards .card:hover {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  background-color: #0009;
+}
+
+.conf .cards .card .img {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.conf .cards .card img {
+  max-height: 180px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: fit-content;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.conf .cards .card h2 {
+  color: #fff;
+  width: 95%;
+  margin: auto;
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+.conf .cards .card .location-info {
+  position: relative;
+  font-size: 12px;
+}
+
+/* .conf .cards .card .location-info .location {
+  position: absolute;
+  top: -50px;
+  height: 45px;
+  color: #000;
+  background-color: var(--second-color);
+  border-bottom: #eee 1px solid; */
+/* box-shadow: #0009 0 1px 0.5px;
+  width: 60%;
+  right: 40px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+.conf .cards .card:hover .location-info .location {
+  background-color: var(--main-color);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.conf .cards .card .location-info .location .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+} */

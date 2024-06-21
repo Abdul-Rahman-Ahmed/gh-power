@@ -1,0 +1,45 @@
+.project .about h2 {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  font-weight: bold;
+}
+.project .about {
+  background-image: url(../../imgs/project.jpg);
+  height: 350px;
+}
+
+.project h2 {
+  color: var(--main-color);
+  text-align: center;
+  padding: 30px;
+}
+
+.project .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.project .text {
+  width: 50%;
+}
+
+.project .img {
+  width: 50%;
+}
+
+.project .img img,
+.project .video video {
+  width: 100%;
+}
+
+.project .overflow {
+  text-align: justify;
+}

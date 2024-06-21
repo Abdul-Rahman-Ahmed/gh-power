@@ -1,0 +1,95 @@
+footer .main {
+  display: grid;
+  grid-template-columns: 200px 1fr auto;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  background-color: #294b29;
+}
+
+footer .main .privacy li {
+  color: #fff;
+}
+
+footer .nav-links {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+footer .nav-links li {
+  width: calc((100% - 60px) / 3);
+}
+
+@media (max-width: 768px) {
+  footer .nav-links li {
+    width: calc((100% - 40px) / 2);
+  }
+}
+
+@media (max-width: 500px) {
+  footer .foot {
+    display: block;
+  }
+
+  footer .nav-links {
+    padding: 20px 0;
+    display: block;
+    text-align: center;
+  }
+
+  footer .nav-links li {
+    width: 100%;
+  }
+}
+
+footer .main .nav-links li a {
+  color: #fff;
+}
+
+footer .main .follow-us {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+footer .main .follow-us li a {
+  display: block;
+  font-size: 18px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  color: #fff;
+}
+
+footer .main .follow-us li a:hover {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+footer .main .follow-us li:first-child a:hover {
+  color: #0866ff;
+}
+
+footer .main .follow-us li:nth-child(2) a:hover {
+  color: #d13d8a;
+}
+
+footer .main .follow-us li:nth-child(3) a:hover {
+  color: #666666;
+}
+
+footer .main .follow-us li:last-child a:hover {
+  color: #ff0000;
+}
+
+footer .copy-right {
+  background-color: #294b29;
+  direction: ltr;
+  text-align: center;
+}

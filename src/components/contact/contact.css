@@ -1,0 +1,8 @@
+.contact {
+  background-image: url(../../imgs/contact.jpg);
+  height: 300px;
+  text-align: center;
+}
+.button {
+  margin: 50px auto;
+}

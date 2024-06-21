@@ -1,0 +1,73 @@
+.contact-us .about {
+  background-image: url(../../imgs/h2About/contact.jpg);
+  height: 350px;
+}
+
+.contact-us .about h2 {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  font-weight: bold;
+}
+
+.contact-us .future .content {
+  text-align: center;
+}
+
+.contact-us .future .content p {
+  color: #191c18;
+}
+
+.contact-us h2:not(.information h2, .contact h2, .follow h2) {
+  color: var(--main-color);
+}
+
+.contact-us form input {
+  display: block;
+  margin: 10px auto;
+  width: calc(50% - 20px);
+  height: 30px;
+  outline: none;
+  border: none;
+  padding: 0 20px;
+  border-radius: 4px;
+  background-color: #e3e3e3;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.contact-us form input:last-of-type {
+  height: 200px;
+}
+
+.contact-us form button {
+  width: 50%;
+  margin: 40px auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .contact-us form input {
+    width: calc(60% - 20px);
+  }
+  .contact-us form button {
+    width: calc(63%);
+    margin: 20px auto;
+  }
+}
+@media (max-width: 500px) {
+  .contact-us form input {
+    width: calc(80% - 20px);
+  }
+  .contact-us form button {
+    width: calc(100% - 40px);
+    margin: 20px auto;
+  }
+}

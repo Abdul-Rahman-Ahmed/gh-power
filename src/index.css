@@ -1,13 +1,317 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Noto Kufi Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
+}
+::selection {
+  background-color: #eee;
+  color: var(--main-color);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.container {
+  padding: 0 50px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links li a {
+  padding: 5px 10px;
+}
+
+.copy-right {
+  color: #fff;
+}
+
+.logo {
+  height: 75px;
+}
+
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.background {
+  position: relative;
+  width: 100%;
+}
+
+.dark::after {
+  background-color: rgba(0, 0, 0, 0.47);
+}
+
+.light::after {
+  background-color: rgba(255, 255, 255, 0.196);
+}
+
+.cover {
+  background-size: cover;
+}
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.bink-background {
+  background-color: var(--bink-color);
+}
+
+.white-text {
+  color: #fff;
+}
+
+button,
+.button {
+  background-color: var(--second-color);
+  display: block;
+  width: fit-content;
+  border: none;
+  border-radius: 4px;
+  margin: 20px 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  padding: 8px 12px;
+  color: #fff;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+button:hover,
+.button:hover {
+  background-color: var(--main-color);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  cursor: pointer;
+}
+
+.index {
+  position: relative;
+  z-index: 1;
+}
+
+.flex2 {
+  padding-top: 40px;
+  display: flex;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.flex2 div {
+  width: 50%;
+}
+
+.what .img {
+  width: 50%;
+}
+
+.img img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .flex2 {
+    display: block;
+  }
+  .flex2 div,
+  .what .img {
+    width: 100%;
+  }
+}
+
+.flex2 div .para {
+  margin: 10px 0;
+  color: #736e6e;
+  text-align: justify;
+}
+
+.flex2 div .para ~ p {
+  text-align: justify;
+}
+
+.information {
+  background-image: url(./imgs/h2About/information.jpg);
+  height: fit-content;
+  padding: 40px 0;
+}
+
+.information h2 {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 30px;
+}
+
+.information .knows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.information .knows .know {
+  width: calc(80% / 3);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .information .knows .know {
+    width: 40%;
+  }
+}
+
+@media (max-width: 426px) {
+  .information .knows .know {
+    width: 80%;
+  }
+}
+.information .knows .know p {
+  text-align: justify;
+}
+
+.information .knows .know .icon i {
+  padding: 30px;
+  background-color: var(--main-color);
+
+  font-size: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.content .green {
+  color: var(--second-color);
+}
+
+.qoute div {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border: solid 1px rgb(107, 128, 93);
+  border-right: none;
+  border-left: none;
+  padding: 50px;
+  font-style: italic;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .qoute div {
+    padding: 20px;
+    font-size: 14px;
+  }
+}
+
+.head {
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+  position: relative;
+  z-index: 0;
+}
+
+.head.instituations {
+  background-image: url(./imgs/about-us/background.jpg);
+}
+
+.confe {
+  background-image: url(./imgs/instituations.jpeg);
+}
+
+.head.projects {
+  background-image: url(./imgs/projects..jpg);
+}
+
+.head.info {
+  background-image: url(./imgs/info.jpg);
+}
+
+.head.about {
+  background-image: url(./imgs/about.jpg);
+}
+
+.head::after {
+  content: "";
+  background-color: #0009;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.page-name {
+  color: #fff;
+  font-weight: bold;
+  font-size: 50px;
+  z-index: 1;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }

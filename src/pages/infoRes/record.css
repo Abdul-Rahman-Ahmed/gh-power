@@ -1,0 +1,28 @@
+.record {
+  margin-top: 80px;
+  direction: ltr;
+}
+
+.record h1 {
+  margin: 0;
+  color: var(--main-color);
+}
+
+.record h1 a {
+  color: var(--second-color);
+  font-size: 14px;
+}
+
+.record .abstract {
+  text-align: justify;
+}
+
+.record span {
+  font-weight: bold;
+}
+
+.record ul {
+  display: flex;
+  gap: 5px;
+  color: #25252599;
+}

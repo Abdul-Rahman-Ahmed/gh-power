@@ -1,0 +1,186 @@
+.about-us .about {
+  background-image: url(../../imgs/about-us/background.jpg);
+  height: 350px;
+}
+
+.about-us .about h2 {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  font-weight: bold;
+}
+
+.about-us .future .content {
+  text-align: center;
+}
+
+.about-us .future .content p {
+  color: #191c18;
+}
+
+.about-us .future .flex2 .content {
+  text-align: justify;
+}
+
+/* .about-us .flex2 {
+  padding-top: 40px;
+  display: flex;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.about-us .flex2 div {
+  width: 50%;
+}
+
+.about-us .img {
+  width: 50%;
+}
+
+.about-us .img img {
+  width: 100%;
+} */
+
+.about-us .qoute {
+  background-image: url(../../imgs/about-us/qoute.jpg);
+  height: 300px;
+}
+
+/* .about-us .qoute div {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border: solid 1px rgb(107, 128, 93);
+  border-right: none;
+  border-left: none;
+  padding: 50px;
+  font-style: italic;
+  z-index: 1;
+} */
+
+/* .about-us .what .content .para {
+  color: #191c18;
+} */
+
+/* .about-us .content h2 {
+  padding-top: 10px;
+} */
+
+/* .about-us .content .green {
+  color: #79a207;
+} */
+
+.about-us h2:not(.information h2, .contact h2, .follow h2) {
+  color: var(--main-color);
+}
+
+.about-us .information {
+  background-image: url(../../imgs/about-us/values.jpg);
+}
+
+/* .about-us .why p {
+  color: #191c18;
+} */
+
+.about-us .why .whyhdro {
+  text-align: center;
+}
+
+/* .about-us .why .numbers .num {
+  font-weight: bold;
+  background-color: var(--main-color);
+  padding: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: relative;
+  margin: 80px auto;
+}
+
+.about-us .why .numbers .center {
+  margin: auto;
+  position: relative;
+}
+
+.about-us .why .numbers .num p {
+  font-size: 30px;
+  color: #fff;
+  margin: 0;
+}
+
+.about-us .why .numbers .center:not(:last-child):after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 80px;
+  background-color: var(--main-color);
+  bottom: -80px;
+  left: 50%;
+}
+
+.about-us .why .numbers .center .text {
+  width: 35%;
+  top: 50%;
+  left: 72%;
+}
+
+.about-us .why .numbers .center:nth-child(even) .text {
+  left: 27%;
+} */
+
+.about-us .contact {
+  background-image: url(../../imgs/h2About/contact.jpg);
+  height: 300px;
+  text-align: center;
+}
+
+.about-us .contact button {
+  margin-top: 50px;
+}
+
+.about-us .follow {
+  background-image: url(../../imgs/h2About/follow.jpg);
+  text-align: center;
+  height: 200px;
+}
+
+.about-us .follow .links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.about-us .follow .links a {
+  color: #000;
+  background-color: #fff;
+  height: 25px;
+  width: 25px;
+  display: block;
+  position: relative;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.about-us .follow .links a:hover {
+  color: #fff;
+  background-color: #79a207;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
